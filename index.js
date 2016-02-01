@@ -8,7 +8,7 @@ var slack = new Slack(config.slack.webhookUrl, {})
 var express = require('express')
 var app = express()
 
-app.get('/', function (req, res) {
+app.post('/', function (req, res) {
   var date = new Date()
   date.setDate(date.getDate() - 1) // get last 24 hours cards
   // closed means archived
