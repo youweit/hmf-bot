@@ -5,7 +5,7 @@ Just a simple slack and trello bot.
 $ npm install
 ```
 
-Fill the settings
+Fill in the configs
 
 ```
 $ cp config/template.json config/default.json
