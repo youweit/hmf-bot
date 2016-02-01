@@ -1,0 +1,20 @@
+{
+  "name": "hmf-bot",
+  "version": "1.0.0",
+  "description": "Just a simple slack & trello bot.",
+  "main": "index",
+  "scripts": {
+    "start": "node index"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "youweit",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^1.19.0",
+    "express": "^4.13.4",
+    "node-slack": "0.0.7",
+    "node-trello": "^1.1.2"
+  }
+}
