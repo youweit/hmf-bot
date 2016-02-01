@@ -2,17 +2,17 @@
 Just a simple slack and trello bot.
 
 ```
-$npm install
+$ npm install
 ```
 
 Fill the settings
 
 ```
-$cp config/template.json config/default.json
+$ cp config/template.json config/default.json
 ```
 
 Run
 
 ```
-$node app.js
+$ node app.js
 ```
