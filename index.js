@@ -26,16 +26,15 @@ app.post('/', function (req, res) {
     if (counter === 0) {
       message = 'WOW NO BUG IGNORED TODAY!!!'
     } else if (counter < 10) {
-      message = counter + ' bug ignored today.'
+      message = counter + ' bugs ignored today.'
     } else {
-      message = counter + ' BUG IGNORED TODAY, KAABAAM!!! Why so many?'
+      message = counter + ' BUGS IGNORED TODAY, KAABAAM!!! Why so many?'
     }
 
     console.log(message)
     var reply = {
       text: message
     }
-    slack.send(reply)
     res.json(reply)
   })
 })
