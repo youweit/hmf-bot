@@ -32,12 +32,10 @@ app.post('/', function (req, res) {
     }
 
     console.log(message)
-    var reply = slack.respond(req.body, function (hook) {
-      return {
-        text: message,
-        username: 'HMF-Bot'
-      }
-    })
+    var reply = {
+      text: message
+    }
+    slack.send(reply)
     res.json(reply)
   })
 })
